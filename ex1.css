@@ -1,0 +1,762 @@
+
+/*===== BASE =====*/
+*{
+  /*dawire dyal box howa kikhali 3anasir mtynas9a wkha tl3ab bi margin o padding kib9aw mkadin*/
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+html{
+  /*had scrole mhm katkhalik tmchi li catiguri bi tari9a smooth*/
+  scroll-behavior: smooth;
+}
+body{
+  background: url(../exercises\ for\ me/imgs/paxels4.jpg) ;
+  background-size: 1920px 1000px;
+  /*top =48px right=0 bottom=0 left=0*/
+  font-family: 'Poppins', sans-serif;
+  font-size: 16.008px;
+  color: #0E2431;
+}
+h1,h2,p{
+  margin: 0;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+/*====================header====================*/
+/*===== LAYOUT =====*/
+.bd-grid{
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  /*DAWIR DYALHA KATBA3ID 3ANASIR 3ARDIYAM*/
+  grid-column-gap: 32px;
+  width: 80%;
+  /*hadi katban heta kaskhir ecran li tele*/
+  margin-left: 16px;
+  margin-right: 16px;
+ 
+}
+.l-header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #fff;
+  box-shadow: 0 3px 4px rgba(146,161,176,.15);
+}
+/*===== NAV =====*/
+.nav{
+  display: flex;
+  justify-content: space-between;
+  /*bima2an flex deja row idan had center athotha wasite*/
+  align-items: center;
+  height: 64px;
+}
+/*.nav__item{
+}*/
+.nav__link{
+  /*had relative kathaymin 3ela ka3 3anasir kitwili hiya liwla o dima blastha mahfoud*/
+  position: relative;
+  color: #0E2431;
+  
+}
+/*.nav__link:hover{
+}*/
+.nav__link:hover::after
+{
+  /*ha patia hiya dik la line litahite about skills..*/
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2.88px;
+  left: 0;
+  top: 32px;
+  background-color: #4070F4;
+}
+.nav__logo{
+   
+  color: #0E2431;
+}
+
+/*Active menu*/
+.active::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2.88px;
+  left: 0;
+  top: 32px;
+  background-color: #4070F4;
+}
+
+  /*had min ya3ni dire hadchi kamil ta twsal screen 768px minba3d hbise*/
+ 
+
+  .nav__list{
+    /*had display flex hiya li mkhalya home et aboute ... 3ardiya*/
+    display: flex;
+  }
+  .nav__item{
+    /* ha left hiya limkhalya home et aboute ... b3ida ma3a ba3diyatho bi 48px*/
+    margin-left: 48px;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .nav__toggle{
+    display: none;
+  }
+  
+
+/*====================home====================*/
+/*===== HOME =====*/
+.home{
+  /*hade 100vh hiya katchid bg kamla 100% wkha tbidiul ecron li tele atb9a 100% */
+  /*okatba3ide 3anasir lifihom div 3laba3diyathom 3la hasab num lidayir nta toliyan*/
+  height: 100vh;
+ 
+}
+.home__data{
+  /*fihade align ti9dar dire khire matrgin-top*/
+  align-self:center;
+  position: relative;
+  top: 20px;  
+  margin-bottom: 53px;
+  
+}
+.home__title{
+  font-size: 56px;
+  margin-bottom: 40px;
+}
+.home__title-color{
+  color: #4070F4;
+}
+.home__social{
+  display: flex;
+  position: relative;
+  top: 50px;
+   
+}
+.home__social-icon{
+  /*had max machi darori dirha*/
+  position: relative;
+  top: 102px;
+  margin-right: 32px;
+  font-size: 24px;
+  color: #0E2431;
+}
+.home__social-icon:hover{
+  color: #4070F4;
+}
+.home__img{
+  position: absolute;
+  right: 60px;
+  bottom: 210px;
+}
+
+.imghome{
+  width: 550px;
+}
+/*BUTTONS*/
+.button{
+  display: inline-block;
+  background-color: #4070F4;
+  color: #fff;
+  padding: 12px 41px;
+  font-weight: 600px;
+  border-radius: 8px;
+}
+.button:hover{
+  box-shadow: 0 10px 36px rgba(0,0,0,.15);
+}
+/*====================about====================*/
+/* ===== ABOUT =====*/
+  .section{
+    padding-top: 70px;
+    padding-bottom: 77px;
+  }
+  .section-title{
+    position: relative;
+    font-size: 32px;
+    color: #4070F4;
+    
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .section-title::after{
+    position: absolute;
+    content: "";
+    width: 85px;
+    height: 2.88px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 49px;
+    background-color: #4070F4;
+  }
+  
+  .about__container{
+    /*had colums hiya likhaltho msatfin fi text o img 9asmatho 3ela 2*/
+    grid-template-columns: repeat(2,1fr);
+    /*align items hiya likathot text fi center ou star..*/
+    align-items: center;
+      /*had row gap dawir dyalha katba3id 3anasire ala b3diyatha toliyan*/
+    /*row-gap: 32rem;*/
+      
+  }
+  .about__img img{
+    width: 300px;
+    border-radius: 8px;
+  }
+ 
+  .about__subtitle{
+    margin-bottom: 16px;
+  }
+  .about__img{
+    /*had self katkhalik di li star wil end wi center hadchi fi 3aride*/
+    /*had self kadirha ila kan 3onsir wahid*/
+    justify-self:center;
+  }
+  
+  /* ===== SKILLS =====*/
+
+.skills__subtitle{
+  margin-bottom: 16px;
+}
+.skills__container{
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  
+}
+.skills__text{
+  margin-bottom: 32px;
+}
+.skills__data{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-weight: 600;
+  padding: 8px 16px;
+  margin-bottom: 32px;
+  border-radius: 8px;
+  box-shadow: 0 4px 25px rgba(14,36,49,.15);
+  background-color: #f6f6f6;
+  
+}
+.skills__icon{
+  font-size: 32px;
+  margin-right: 16px;
+  color: #4070F4;
+}
+.skills__names{
+  display: flex;
+  align-items: center;
+}
+.skills__bar{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #4070F4;
+  height: 4px;
+  border-radius: 8px;
+}
+.skills__html{
+  width: 95%;
+}
+.skills__css{
+  width: 85%;
+}
+.skills__js{
+  width: 50%;
+}
+.skills__ux{
+  width: 85%;
+}
+.skills__php{
+  width: 60%;
+}
+.skills__montage{
+  width: 85%;
+}
+.skills__img{
+  border-radius: 8px;
+}
+
+/* ===== WORK =====*/
+.work__container{
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 32px;
+  /*had row katkhali espace bim 3anasire toliyan*/
+  grid-row-gap: 32px;
+  
+}
+.work__img{
+  box-shadow: 0 4px 25px rgba(14,36,49,.15);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.work__img img{
+  transition: 1s;
+  cursor: pointer;
+}
+.work__img img:hover{
+  transform: scale(1.1);
+}
+/* ===== CONTACT =====*/
+.contact__input{
+  /*mili kadir width 100% outamtiq kirja3w stare*/
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1.5px solid #0E2431;
+  outline: none;
+  margin-bottom: 32px;
+}
+.contact__button{
+  /*had display machi darori */
+  display: block;
+  border: none;
+  /*had outline hiya mili kathot cursor kaban wahid la line mili kadirlih none makibanch*/
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+  /*had margin auto katkhdim mili kikon 3onsir ma morah ta 3onsir*/
+  margin-left: auto;
+}
+.contact__form{
+  width: 360px;
+
+}
+.contact__container{
+  /*had items kadirha mili kikono bzaf dyal 3anasir*/
+  justify-items: center;
+}
+/* ===== FOOTER =====*/
+.footer{
+  background-color: #0E2431;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  padding: 32px 0;
+}
+.footer__title{
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+.footer__social{
+  margin-bottom: 32px;
+}
+.footer__icon{
+  font-size: 24px;
+  color: #fff;
+  margin: 0 16px;
+}
+
+
+@media screen and (min-width: 1024px){
+  /* had min ya3ni dir hadchi minimal fi 1024px 9ali minha khadi idire dakchi li kharij media*/
+  .bd-grid{
+    /*had left o right katjibha fi center*/
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
+}
+@media screen and (max-width: 1024px){
+  .nav{
+    width: 96%;
+  }
+  .home{
+    width: 96%;
+  }
+  .home__data{
+    /*fihade align ti9dar dire khire matrgin-top*/
+    align-self:center;
+    position: relative;
+    top: 40px;  
+  }
+  .about__container{
+    width: 96%;
+  }
+  .skills__container{
+    width: 96%;
+  }
+  .work__container{
+    width: 96%;
+  }
+  .contact__container{
+    width: 96%;
+  }
+  .home__img{
+    position: absolute;
+    right: 10px;
+    bottom: 40px;
+  }
+  .imghome{
+    width: 500px;
+  }
+
+ 
+}
+
+
+@media (min-width: 1024px) and (max-width: 1262px){
+  .home__img{
+    position: absolute;
+    right: 10px;
+    bottom: 210px;
+    
+  }
+
+}
+@media (min-width: 1024px) and (max-width: 1183px){
+  .home__img{
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    
+  }
+  .imghome{
+    width: 450px;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+ 
+ .nav{
+   width: 97%;
+ }
+ .home__img{
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+  
+}
+.imghome{
+  width: 450px;
+}
+}
+/*ipad pro*/
+@media (width: 1024px) and (height: 1366px){
+  .home__img{
+    position: absolute;
+    right: 10px;
+    bottom: 500px;
+  }
+  .home__social{
+    position: absolute;
+    bottom: 600px;
+  }
+}
+
+
+/*=======medai dans tele========*/
+
+@media screen and (max-width: 767px){
+  .section{
+    padding-top: 64px;
+    padding-bottom: 48px;
+  }
+  .section-title{
+    margin-bottom: 36px;
+    font-size: 20px;
+
+  }
+  .section-title::after{
+    width: 60px;
+    top: 32px;
+  }
+
+/*===== NAV =====*/
+.nav__menu{
+  position: fixed;
+  top: 48px;
+  right: -100%;
+  width: 80%;
+  height: 100%;
+  padding: 2rem;
+  background-color: #0E2431;
+  transition: .5s;
+}
+.nav__toggle{
+  color: #0E2431;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 16px;
+  display: block;
+
+}
+.nav{
+  width: 98%;
+  height: 48px;
+  font-weight: 600;
+}
+.nav__list{
+  flex-direction: column;
+  position: relative;
+  right: 40px;
+  font-size: 18px;
+}
+.nav__item{
+  margin-bottom: 32px;
+}
+.nav__link{
+  position: relative;
+  color: #fff;
+}
+.nav__link:hover{
+  position: relative;
+}
+.nav__link:hover::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2.88px;
+  left: 0;
+  top: 32px;
+  background-color: #4070F4;
+}
+.nav__logo{
+  color: #0E2431;
+}
+
+/*=== Show menu ===*/
+.show{
+  right: 0;
+}
+
+/*===== HOME =====*/
+.home__data{
+  padding-top: 20px;
+  align-self: flex-start;
+}
+.home__title{
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+.home__title-color{
+  color: #4070F4;
+}
+.home__social{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 8px;
+
+  
+}
+.home__social-icon{
+  margin-bottom: 16px;
+  font-size: 24px;
+  color: #0E2431;
+}
+.home__social-icon:hover{
+  color: #4070F4;
+}
+
+.home__img{
+  position: absolute;
+  right: 10px;
+  bottom: 30px;
+  
+}
+.imghome{
+  width: 430px;
+}
+
+/*BUTTONS*/
+.button{
+  display: inline-block;
+  background-color: #4070F4;
+  color: #fff;
+  padding: 12px 40px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+.button:hover{
+  box-shadow: 0 10px 36px rgba(0,0,0,.15);
+}
+/* ===== ABOUT =====*/
+.about__container{
+  row-gap: 32px;
+  text-align: center;
+  grid-template-columns: repeat(1,1fr);  
+  width: 92%;
+}
+.about__text{
+  font-size: 15px;
+}
+.about__subtitle{
+  margin-bottom: 16px;
+}
+.about__img{
+  justify-self: center;
+}
+.about__img img{
+  width: 200px;
+  border-radius: 8px;
+}
+/*skills*/
+.skills__container{
+  text-align: center;
+  grid-template-columns: repeat(1,1fr); 
+  row-gap: 32px;
+  width: 92%;
+}
+.skills__text{
+  font-size: 15px;
+
+}
+/*====work====*/
+.work__container{
+  grid-template-columns: repeat(1,1fr); 
+  width: 90%;
+  position: relative;
+  left: 3px;
+}
+/*====contact====*/
+
+.contact__button{
+  /*had display machi darori */
+  display: block;
+  border: none;
+  /*had outline hiya mili kathot cursor kaban wahid la line mili kadirlih none makibanch*/
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+  /*had margin auto katkhdim mili kikon 3onsir ma morah ta 3onsir*/
+  margin-left: auto;
+}
+.contact__form{
+  width: 340px;
+
+}
+.contact__container{
+  width: 91%;
+  
+}
+
+}
+@media screen and (max-width: 467px){
+  .home__data{
+    padding-top: 20px;
+    align-self: flex-start;
+  }
+  .home__title{
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+  .home__img{
+    position: absolute;
+    top: 360px;
+    
+  }
+  .imghome{
+    width: 350px;
+  }
+  .home__social{
+    position: absolute;
+    top: 450px;
+    
+  }
+
+}
+@media screen and (max-width: 380px){
+  .home__img{
+    position: absolute;
+    top: 340px;
+    
+  }
+  .imghome{
+    width: 320px;
+  }
+  .home__social{
+    position: absolute;
+    top: 410px;
+    
+  }
+
+}
+@media screen and (min-width: 1920px){
+ 
+  .home__img{
+    position: absolute;
+    top: 170px;
+    right: 150px;
+  }
+  .home__img img{
+    transition: 1s;
+    width: 600px;
+  }
+  .home__img img:hover{
+   transform: scale(1.1);
+
+  }
+  .home__data{
+    position: absolute;
+    left: 150px;
+    top: 190px;
+    
+  }
+  .home__title{
+    font-size: 70px;
+  }
+  .home__social{
+    position: relative;
+    right: 290px;
+    top: 80%;
+  }
+  .home__social i{
+    font-size: 30px;
+    transition: .5s;
+   
+  }
+  .home__social i:hover{
+    font-size: 40px;
+    transform: scale(1.1);
+  }
+  .nav__logo{
+    position: relative;
+    right: 300px;
+  }
+  .nav__list{
+    position: relative;
+    left: 300px;
+  }
+  .about__img{
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .about__img img{
+    transition: 1s;
+  }
+  .about__img img:hover{
+    transform: scale(1.1);
+  }
+ /*
+  body{
+    background: url(../imgs/paxels2.jpg) no-repeat  ;
+    background-size: 1920px 1000px;
+  }
+  */
+}
+
+  
+  
+ 
+
