@@ -414,7 +414,7 @@ a{
 }
 
 
-@media (min-width: 1024px) and (max-width: 1262px){
+@media screen and (min-width: 1024px) and (max-width: 1262px){
   .home__img{
     position: absolute;
     right: 10px;
@@ -423,7 +423,7 @@ a{
   }
 
 }
-@media (min-width: 1024px) and (max-width: 1183px){
+@media screen and (min-width: 1024px) and (max-width: 1183px){
   .home__img{
     position: absolute;
     right: 10px;
@@ -436,7 +436,7 @@ a{
 
 }
 
-@media (min-width: 768px) and (max-width: 1023px){
+@media screen and (min-width: 768px) and (max-width: 1023px){
  
  .nav{
    width: 97%;
@@ -692,6 +692,59 @@ a{
   }
 
 }
+@media (max-height: 414px){
+  .home__data{
+    padding-top: 20px;
+    align-self: flex-start;
+  }
+  .home__title{
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+  .home__img{
+    position: absolute;
+    top: 60px;
+    
+  }
+  .imghome{
+    width: 350px;
+  }
+  .home__social{
+    position: absolute;
+    top: 275px;
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+}
+@media (max-height: 375px){
+  .home__data{
+    padding-top: 20px;
+    align-self: flex-start;
+  }
+  .home__title{
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .home__img{
+    position: absolute;
+    top: 60px;
+    
+  }
+  .imghome{
+    width: 320px;
+  }
+  .home__social{
+    position: absolute;
+    top: 240px;
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+}
+
 @media screen and (min-width: 1920px){
  
   .home__img{
