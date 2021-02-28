@@ -13,6 +13,9 @@ html{
 body{
 <<<<<<< HEAD
   background: url(./imgs/paxels4.jpg);
+=======
+  background: url(./imgs/paxels4.jpg) ;
+>>>>>>> 5394aae1e315a6d04b7ad6f0a4ec4b245ac3e141
   background-size: 1920px 1000px;
   /*top =48px right=0 bottom=0 left=0*/
   font-family: 'Poppins', sans-serif;
