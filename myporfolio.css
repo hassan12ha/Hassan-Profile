@@ -517,6 +517,9 @@ span {
     bottom: 15%;
     left: 50%;
   }
+  .work__container {
+    background-color: #e5e5e35d;
+  }
 }
 @media screen and (max-width: 480px) {
   .main-image img {
@@ -528,6 +531,9 @@ span {
     bottom: 15%;
     left: 50%;
   }
+  .work__container {
+    background-color: #e5e5e35d;
+  }
 }
 @media screen and (max-width: 375px) {
   .main-image img {
@@ -538,6 +544,7 @@ span {
     position: relative;
     bottom: 100px;
     margin: 0 22px;
+    background-color: #e5e5e35d;
   }
   .section-title {
     position: relative;
@@ -571,6 +578,14 @@ span {
     position: relative;
     bottom: 60px;
     margin: 0 18px;
+    background-color: #e5e5e35d;
+  }
+  .porfo-title {
+    font-size: 40px;
+  }
+  .porfo_data {
+    position: relative;
+    left: 10px;
   }
   .section-title {
     position: relative;
