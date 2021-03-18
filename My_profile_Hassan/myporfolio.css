@@ -1,0 +1,644 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.return a {
+  font-size: 60px;
+  position: relative;
+  top: 70px;
+  left: 40px;
+
+  color: #0e2431;
+}
+.return a:hover {
+  color: #4070f4;
+}
+
+body {
+  background: url(./imgs/paxels5.jpg);
+  background-size: 1920px 1000px;
+  font-size: 16.008px;
+  color: #0e2431;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.bd-grid {
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  width: 80%;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.l-header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+  box-shadow: 0 3px 4px rgba(146, 161, 176, 0.15);
+}
+.nav__toggle {
+  display: none;
+}
+.nav {
+  display: flex;
+  height: 64px;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__list {
+  display: flex;
+}
+.nav__item {
+  margin-left: 48px;
+}
+.nav__logo {
+  color: #0e2431;
+}
+.nav__link {
+  position: relative;
+  color: #0e2431;
+}
+.nav__link:hover::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2.88px;
+  left: 0;
+  top: 32px;
+  background-color: #4070f4;
+}
+.active::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2.88px;
+  left: 0;
+  top: 32px;
+  background-color: #4070f4;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+@media screen and (min-width: 1024px) {
+  .bd-grid {
+    /*had left o right katjibha fi center*/
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home__social-icon {
+    position: relative;
+    top: 20px;
+  }
+}
+.porfo {
+  height: 50vh;
+}
+.porfo_data {
+  /*fihade align ti9dar dire khire matrgin-top*/
+  position: relative;
+  top: 150px;
+  text-align: center;
+  margin-bottom: 53px;
+}
+span {
+  color: #4070f4;
+}
+.porfo-title {
+  font-family: "Akaya Kanadaka", cursive;
+  font-size: 90px;
+}
+.porfo__social {
+  justify-self: center;
+  position: relative;
+  bottom: 35px;
+  left: 15px;
+}
+.porfo__social i {
+  font-size: 30px;
+  transition: 0.5s;
+}
+.porfo__social i:hover {
+  font-size: 40px;
+  transform: scale(1.1);
+}
+.home__social-icon {
+  /*had max machi darori dirha*/
+  margin-right: 32px;
+  font-size: 24px;
+  color: #0e2431;
+}
+.home__social-icon:hover {
+  color: #4070f4;
+}
+/*================ works ============*/
+.section {
+  position: relative;
+  bottom: 150px;
+  padding-top: 70px;
+}
+.section-title {
+  text-align: center;
+  color: #4070f4;
+  position: relative;
+  bottom: 20px;
+  font-size: 32px;
+  z-index: 10;
+}
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 85px;
+  height: 3.88px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 49px;
+  background-color: #4070f4;
+}
+.section-title1 {
+  text-align: center;
+  color: #4070f4;
+  position: relative;
+  bottom: 20px;
+  font-size: 32px;
+  z-index: 10;
+}
+.section-title1::after {
+  position: absolute;
+  content: "";
+  width: 110px;
+  height: 2.88px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 49px;
+  background-color: #4070f4;
+}
+.section-title2 {
+  text-align: center;
+  color: #4070f4;
+  position: relative;
+  bottom: 20px;
+  font-size: 32px;
+  z-index: 10;
+}
+.section-title2::after {
+  position: absolute;
+  content: "";
+  width: 195px;
+  height: 2.88px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 49px;
+  background-color: #4070f4;
+}
+.work__container {
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+  background-color: #e5e5e3;
+  padding: 110px 50px 50px 50px;
+  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.623);
+  border-radius: 20px;
+  position: relative;
+  bottom: 80px;
+}
+.work__img {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.418);
+}
+.work__img img {
+  cursor: pointer;
+  transition: 1s;
+}
+.work__img img:hover {
+  transform: scale(1.1);
+}
+/* ===== FOOTER =====*/
+.footer {
+  background-color: #0e2431;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  padding: 32px 0;
+}
+.footer__title {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+.footer__social {
+  margin-bottom: 32px;
+}
+.footer__icon {
+  font-size: 24px;
+  color: #fff;
+  margin: 0 16px;
+}
+/*=========media========*/
+
+/*hadi mhm pc Elite Book min 1919 li 1280*/
+@media screen and (max-width: 1919px) and (min-width: 460px) {
+  .porfo__social {
+    position: relative;
+    bottom: 70px;
+    margin-bottom: 20px;
+  }
+  .porfo_data {
+    position: relative;
+    top: 75px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (width: 1366px) and (height: 768px) {
+}
+@media screen and (max-width: 700px) {
+  .porfo-title {
+    font-size: 70px;
+  }
+
+  .work__container {
+    grid-template-columns: repeat(1, 1fr);
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .porfo-title {
+    font-size: 80px;
+  }
+  .nav__menu {
+    position: fixed;
+    top: 48px;
+    right: -100%;
+    width: 80%;
+    height: 100%;
+    padding: 2rem;
+    background-color: #0e2431;
+    transition: 0.5s;
+  }
+  .nav__toggle {
+    color: #0e2431;
+    font-size: 26px;
+    cursor: pointer;
+    margin-right: 16px;
+    display: block;
+  }
+  .nav__link {
+    color: #fff;
+  }
+  .nav {
+    width: 98%;
+    height: 48px;
+    font-weight: 600;
+  }
+  .nav__list {
+    flex-direction: column;
+    position: relative;
+    right: 40px;
+    font-size: 18px;
+  }
+  .nav__item {
+    padding-bottom: 30px;
+  }
+  /*=== Show menu had show mhm hit hiya likat affiche menu o kayna fi javascript===*/
+  .show {
+    right: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .porfo-title {
+    font-size: 70px;
+  }
+
+  .work__container {
+    grid-template-columns: repeat(1, 1fr);
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 650px) {
+  .porfo-title {
+    font-size: 60px;
+  }
+  .porfo__social i {
+    font-size: 30px;
+  }
+}
+/*had orientation: landscape kat3ni mili dawir tele iwili 3eride dir hadchi (3aride > tole) */
+/*o hena fi 876px kiltilih idir hadchi fi width 876px*/
+@media (orientation: landscape) and (max-width: 876px) {
+}
+@media (orientation: landscape) and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 550px) {
+  .porfo-title {
+    font-size: 55px;
+  }
+  .porfo__social i {
+    font-size: 27px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .porfo-title {
+    font-size: 50px;
+  }
+  .porfo_data {
+    position: relative;
+    top: 70px;
+  }
+  .porfo__social {
+    position: relative;
+    bottom: 100px;
+  }
+
+  .porfo__social i {
+    font-size: 25px;
+  }
+  .section-title {
+    font-size: 29px;
+  }
+  .section-title1 {
+    font-size: 29px;
+  }
+  .section-title2 {
+    font-size: 29px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .porfo-title {
+    font-size: 39px;
+  }
+  .section-title {
+    font-size: 27px;
+  }
+  .section-title1 {
+    font-size: 27px;
+  }
+  .section-title2 {
+    font-size: 27px;
+  }
+  .porfo__social {
+    position: relative;
+    bottom: 40%;
+    left: 12%;
+  }
+  .porfo_data {
+    position: relative;
+    top: 20%;
+    left: 8%;
+  }
+}
+/*ipad pro*/
+@media (width: 1024px) and (height: 1366px) {
+  .porfo_data {
+    position: relative;
+    top: 200px;
+  }
+}
+/*ipad*/
+@media (width: 768px) and (height: 1024px) {
+  .porfo_data {
+    position: relative;
+    top: 190px;
+  }
+  .porfo__social {
+    position: relative;
+    top: -30px;
+  }
+}
+
+/*==========shadow de imag popup===========*/
+.main-image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.9);
+  pointer-events: none;
+  opacity: 0;
+  z-index: 1000;
+
+  transition: 0.6s;
+}
+/*image qui afficher l imgs*/
+.main-image img {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4px;
+  background-color: black;
+  border: 2px solid white;
+}
+/*style text in img qui afficher*/
+.text {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  color: white;
+}
+/* media in image popup*/
+@media screen and (max-width: 1024px) {
+  .main-image img {
+    width: 460px;
+    height: 460px;
+  }
+  .bd-grid {
+    width: 96%;
+  }
+  .porfo__social a {
+    position: relative;
+    top: 20px;
+  }
+  .work__container {
+    position: relative;
+    bottom: 90px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main-image img {
+    width: 500px;
+    height: 500px;
+  }
+  .nav {
+    width: 98%;
+  }
+  .work__container {
+    position: relative;
+    bottom: 120px;
+  }
+  .section-title {
+    position: relative;
+    bottom: 60px;
+  }
+  .section-title1 {
+    position: relative;
+    bottom: 60px;
+  }
+  .section-title2 {
+    position: relative;
+    bottom: 60px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .main-image img {
+    width: 450px;
+    height: 450px;
+  }
+  .text {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main-image img {
+    width: 400px;
+    height: 400px;
+  }
+  .text {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .main-image img {
+    width: 300px;
+    height: 300px;
+  }
+  .work__container {
+    position: relative;
+    bottom: 100px;
+    margin: 0 22px;
+  }
+  .section-title {
+    position: relative;
+    left: 20px;
+    bottom: 50px;
+  }
+  .section-title1 {
+    position: relative;
+    left: 20px;
+    bottom: 50px;
+  }
+  .section-title2 {
+    position: relative;
+    left: 20px;
+    bottom: 50px;
+  }
+
+  .porfo__social a {
+    position: relative;
+    left: -10px;
+    top: -6px;
+  }
+  .porfo_data {
+    position: relative;
+    top: 43%;
+    left: 5%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .work__container {
+    position: relative;
+    bottom: 60px;
+    margin: 0 18px;
+  }
+  .section-title {
+    position: relative;
+    left: 20px;
+    bottom: 4px;
+  }
+  .section-title1 {
+    position: relative;
+    left: 20px;
+    bottom: 4px;
+  }
+  .section-title2 {
+    position: relative;
+    left: 20px;
+    bottom: 4px;
+  }
+  .footer {
+    width: 107%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .porfo_data {
+    position: relative;
+    top: 170px;
+  }
+  .porfo__social {
+    position: relative;
+    bottom: 30px;
+  }
+  .porfo {
+    position: relative;
+    bottom: 120px;
+  }
+  .work__container {
+    position: relative;
+    bottom: 160px;
+  }
+  .section-title {
+    position: relative;
+    bottom: 100px;
+  }
+  .section-title1 {
+    position: relative;
+    bottom: 100px;
+  }
+  .section-title2 {
+    position: relative;
+    bottom: 100px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .return a {
+    display: none;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 820px) {
+  .work__container {
+    position: relative;
+    top: 90px;
+  }
+  .porfo__social {
+    position: relative;
+    top: 25px;
+  }
+  .section-title {
+    position: relative;
+    top: 150px;
+  }
+}
