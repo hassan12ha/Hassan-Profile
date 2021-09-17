@@ -12,13 +12,19 @@ html {
 body {
   background: url(./imgs/paxels4.jpg);
   background-size: 1920px 1000px;
+  /*katkhali toph fixed fi page kamla*/
+  background-attachment: fixed;
+  /*had cover mhm bzaf katli toph mkada o maktkharb9ch okatkhaliha tjibd ktare min round o heta round maktlich cover tzomi 3ela toph*/
+  background-size: cover;
+  /*dawir dyal round katkhali toph katjibde li 2a9sa haja*/
+  background-repeat: round;
+  /*background-attachment: fixed;*/
   /*top =48px right=0 bottom=0 left=0*/
   font-family: "Poppins", sans-serif;
   font-size: 16.008px;
   color: #0e2431;
 }
-h1,
-h2,
+
 p {
   margin: 0;
 }
@@ -51,6 +57,7 @@ a {
   left: 0;
   z-index: 100;
   background-color: #fff;
+  /*box shadow 0 = right 3px = bottom 4px = katkhali lon chafaf wila 9asih rgba howa lon dyal dale*/
   box-shadow: 0 3px 4px rgba(146, 161, 176, 0.15);
 }
 /*===== NAV =====*/
@@ -318,6 +325,10 @@ img {
 }
 
 /* ===== CONTACT =====*/
+.contact__container {
+  /*had items kadirha mili kikono bzaf dyal 3anasir*/
+  justify-items: center;
+}
 .contact__input {
   /*mili kadir width 100% outamtiq kirja3w stare*/
   width: 100%;
@@ -342,10 +353,6 @@ img {
 }
 .contact__form {
   width: 360px;
-}
-.contact__container {
-  /*had items kadirha mili kikono bzaf dyal 3anasir*/
-  justify-items: center;
 }
 /* ===== FOOTER =====*/
 .footer {
@@ -674,6 +681,20 @@ img {
     width: 91%;
   }
 }
+/*edit*/
+@media screen and (max-width: 540px) {
+  .home__img {
+    position: absolute;
+    top: 350px;
+  }
+  .imghome {
+    width: 350px;
+  }
+  .home__social {
+    position: absolute;
+    top: 450px;
+  }
+}
 @media screen and (max-width: 467px) {
   .home__data {
     padding-top: 20px;
@@ -760,7 +781,7 @@ img {
     flex-direction: row;
   }
 }
-
+/*edit*/
 @media screen and (min-width: 1920px) {
   .home__img {
     position: absolute;
@@ -783,8 +804,9 @@ img {
     font-size: 70px;
   }
   .home__social {
-    position: relative;
-    right: 290px;
+    /*hena 3omrik dir chihaja tkon m9arba odir wahda relative o lakhera absolute hadi atkhla9 lik mochkil*/
+    position: absolute;
+    left: 150px;
     top: 80%;
   }
   .home__social i {
@@ -829,6 +851,7 @@ img {
   top: 0;
   left: 0;
   background-color: rgb(0, 0, 0, 0.9);
+  /*had dwire dyalha kathayid min souri dak logo dyla click*/
   pointer-events: none;
   opacity: 0;
   z-index: 1000;
