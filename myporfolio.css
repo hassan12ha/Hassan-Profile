@@ -22,7 +22,14 @@ html {
 
 body {
   background: url(./imgs/paxels5.jpg);
+  /*background-repeat: no-repeat;*/
   background-size: 1920px 1000px;
+  /*katkhali toph fixed fi page kamla*/
+  background-attachment: fixed;
+  /*had cover mhm bzaf katli toph mkada o maktkharb9ch okatkhaliha tjibd ktare min round o heta round maktlich cover tzomi 3ela toph*/
+  background-size: cover;
+  /*dawir dyal round katkhali toph katjibde li 2a9sa haja*/
+  background-repeat: round;
   font-size: 16.008px;
   color: #0e2431;
 }
@@ -656,7 +663,7 @@ span {
     position: relative;
     top: 150px;
   }
-   .section-title1 {
+  .section-title1 {
     position: relative;
     top: 150px;
   }
